@@ -1,0 +1,5 @@
+:~/montanium-cli/montanium/notes/day1$ ls -la
+total 12
+drwxrwxr-x 2 knrzev knrzev 4096 мая 12 17:57 .
+drwxrwxr-x 3 knrzev knrzev 4096 мая 12 17:54 ..
+-rw-rw-r-- 1 knrzev knrzev  174 мая 12 17:56 README

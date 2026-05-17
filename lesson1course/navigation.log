@@ -1,0 +1,50 @@
+Script started on 2026-05-12 17:47:27+03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="184" LINES="49"]
+[?2004h]0;knrzev@knrzev-MCLG-XX: ~/Desktop/coursehomework[01;32mknrzev@knrzev-MCLG-XX[00m:[01;34m~/Desktop/coursehomework[00m$ cd ..[K[K
+[?2004l[?2004h]0;knrzev@knrzev-MCLG-XX: ~[01;32mknrzev@knrzev-MCLG-XX[00m:[01;34m~[00m$ pwd
+[?2004l/home/knrzev
+[?2004h]0;knrzev@knrzev-MCLG-XX: ~[01;32mknrzev@knrzev-MCLG-XX[00m:[01;34m~[00m$ cd /etc
+[?2004l[?2004h]0;knrzev@knrzev-MCLG-XX: /etc[01;32mknrzev@knrzev-MCLG-XX[00m:[01;34m/etc[00m$ ls
+[?2004ladduser.conf            [0m[01;34mcracklib[0m             environment           hdparm.conf      libaudit.conf   netconfig            profile           services           timezone
+[01;34malsa[0m                    [01;34mcredstore[0m            [01;34menvironment.d[0m         host.conf        [01;34mlibblockdev[0m     [01;34mnetplan[0m              [01;34mprofile.d[0m         [01;34msgml[0m               [01;34mtmpfiles.d[0m
+[01;34malternatives[0m            [01;34mcredstore.encrypted[0m  ethertypes            hostname         [01;34mlibibverbs.d[0m    [01;34mnetwork[0m              protocols         shadow             [01;34mubuntu-advantage[0m
+anacrontab              [01;34mcron.d[0m               [01;34mfonts[0m                 hosts            [01;34mlibnl-3[0m         [01;34mnetworkd-dispatcher[0m  [01;34mpulse[0m             shadow-            ucf.conf
+apg.conf                [01;34mcron.daily[0m           fprintd.conf          hosts.allow      [01;34mlibpaper.d[0m      [01;34mNetworkManager[0m       [01;34mpython3[0m           shells             [01;34mudev[0m
+[01;34mapm[0m                     [01;34mcron.hourly[0m          fstab                 hosts.deny       locale.alias    networks             [01;34mpython3.12[0m        [01;34mskel[0m               [01;34mudisks2[0m
+[01;34mapparmor[0m                [01;34mcron.monthly[0m         fuse.conf             [01;34mhp[0m               locale.conf     [01;34mnewt[0m                 [01;34mrc0.d[0m             [01;34msnmp[0m               [01;34mufw[0m
+[01;34mapparmor.d[0m              crontab              [01;34mfwupd[0m                 [01;34mifplugd[0m          locale.gen      [01;32mnftables.conf[0m        [01;34mrc1.d[0m             [01;34mspeech-dispatcher[0m  [01;34mupdate-manager[0m
+[01;34mapport[0m                  [01;34mcron.weekly[0m          gai.conf              [01;34minit[0m             [01;36mlocaltime[0m       nsswitch.conf        [01;34mrc2.d[0m             [01;34mssh[0m                [01;34mupdate-motd.d[0m
+[01;34mapt[0m                     [01;34mcron.yearly[0m          [01;34mgdb[0m                   [01;34minit.d[0m           [01;34mlogcheck[0m        [01;34mopenvpn[0m              [01;34mrc3.d[0m             [01;34mssl[0m                [01;34mupdate-notifier[0m
+[01;34mavahi[0m                   [01;34mcups[0m                 [01;34mgdm3[0m                  [01;34minitramfs-tools[0m  login.defs      [01;34mopt[0m                  [01;34mrc4.d[0m             [01;34msssd[0m               [01;34mUPower[0m
+bash.bashrc             [01;34mcupshelpers[0m          [01;34mgeoclue[0m               inputrc          logrotate.conf  [01;36mos-release[0m           [01;34mrc5.d[0m             subgid             usb_modeswitch.conf
+bash_completion         [01;34mdbus-1[0m               [01;34mghostscript[0m           [01;34minsserv.conf.d[0m   [01;34mlogrotate.d[0m     [01;34mPackageKit[0m           [01;34mrc6.d[0m             subgid-            [01;34musb_modeswitch.d[0m
+[01;34mbash_completion.d[0m       [01;34mdconf[0m                [01;34mglvnd[0m                 [01;34mipp-usb[0m          lsb-release     pam.conf             [01;34mrcS.d[0m             subuid             [01;36mvconsole.conf[0m
+bindresvport.blacklist  debconf.conf         [01;34mgnome[0m                 [01;34miproute2[0m         machine-id      [01;34mpam.d[0m                [01;36mresolv.conf[0m       subuid-            [01;34mvim[0m
+[01;34mbinfmt.d[0m                debian_version       [01;34mgnome-remote-desktop[0m  issue            magic           papersize            resolv.conf.head  sudo.conf          [01;36mvtrgb[0m
+[01;34mbluetooth[0m               [01;34mdebuginfod[0m           [01;34mgnutls[0m                issue.net        magic.mime      passwd               [01;36mrmt[0m               sudoers            [01;34mvulkan[0m
+brlapi.key              [01;34mdefault[0m              [01;34mgroff[0m                 [01;34mkernel[0m           manpath.config  passwd-              rpc               [01;34msudoers.d[0m          wgetrc
+[01;34mbrltty[0m                  deluser.conf         group                 kerneloops.conf  mime.types      [01;34mpcmcia[0m               rsyslog.conf      sudo_logsrvd.conf  [01;34mwpa_supplicant[0m
+brltty.conf             [01;34mdepmod.d[0m             group-                [01;34mkrb5.conf.d[0m      mke2fs.conf     [01;34mperl[0m                 [01;34mrsyslog.d[0m         [01;34msupercat[0m           [01;34mX11[0m
+[01;34mca-certificates[0m         [01;34mdhcp[0m                 [01;34mgrub.d[0m                [01;34mldap[0m             [01;34mModemManager[0m    [01;34mpki[0m                  rygel.conf        sysctl.conf        xattr.conf
+ca-certificates.conf    dhcpcd.conf          gshadow               ld.so.cache      [01;34mmodprobe.d[0m      [01;34mplymouth[0m             [01;34msane.d[0m            [01;34msysctl.d[0m           [01;34mxdg[0m
+[01;34mchatscripts[0m             [01;34mdictionaries-common[0m  gshadow-              ld.so.conf       modules         [01;34mpm[0m                   [01;34msecurity[0m          [01;34msysstat[0m            [01;34mxml[0m
+[01;34mcloud[0m                   [01;34mdpkg[0m                 [01;34mgss[0m                   [01;34mld.so.conf.d[0m     [01;34mmodules-load.d[0m  pnm2ppa.conf         [01;34mselinux[0m           [01;34msystemd[0m            zsh_command_not_found
+[01;34mcolord[0m                  e2scrub.conf         [01;34mgtk-2.0[0m               legal            [01;36mmtab[0m            [01;34mpolkit-1[0m             sensors3.conf     [01;34mterminfo[0m
+[01;34mconsole-setup[0m           [01;34memacs[0m                [01;34mgtk-3.0[0m               libao.conf       nanorc          [01;34mppp[0m                  [01;34msensors.d[0m         [01;34mthermald[0m
+[?2004h]0;knrzev@knrzev-MCLG-XX: /etc[01;32mknrzev@knrzev-MCLG-XX[00m:[01;34m/etc[00m$ cd /var/log
+[?2004l[?2004h]0;knrzev@knrzev-MCLG-XX: /var/log[01;32mknrzev@knrzev-MCLG-XX[00m:[01;34m/var/log[00m$ ls /usr/bin | wc
+[?2004l   1354    1354   13414
+[?2004h]0;knrzev@knrzev-MCLG-XX: /var/log[01;32mknrzev@knrzev-MCLG-XX[00m:[01;34m/var/log[00m$ ls /usr/bin | wc -;[Kl
+[?2004l1354
+[?2004h]0;knrzev@knrzev-MCLG-XX: /var/log[01;32mknrzev@knrzev-MCLG-XX[00m:[01;34m/var/log[00m$ cd ..[K[K/knrzev
+[?2004lbash: cd: /knrzev: No such file or directory
+[?2004h]0;knrzev@knrzev-MCLG-XX: /var/log[01;32mknrzev@knrzev-MCLG-XX[00m:[01;34m/var/log[00m$ cd/home
+[?2004lbash: cd/home: No such file or directory
+[?2004h]0;knrzev@knrzev-MCLG-XX: /var/log[01;32mknrzev@knrzev-MCLG-XX[00m:[01;34m/var/log[00m$ cd /home
+[?2004l[?2004h]0;knrzev@knrzev-MCLG-XX: /home[01;32mknrzev@knrzev-MCLG-XX[00m:[01;34m/home[00m$ cd /[Kknrzev
+[?2004l[?2004h]0;knrzev@knrzev-MCLG-XX: ~[01;32mknrzev@knrzev-MCLG-XX[00m:[01;34m~[00m$ cd Desk[K[K[K[K[K[K[Kls
+[?2004l[0m[01;34mDesktop[0m  [01;34mDocuments[0m  [01;34mDownloads[0m  [01;34mMusic[0m  [01;34mPictures[0m  [01;34mPublic[0m  [01;34mPyCharmMiscProject[0m  [01;34msnap[0m  [01;34mTemplates[0m  [01;34mVideos[0m
+[?2004h]0;knrzev@knrzev-MCLG-XX: ~[01;32mknrzev@knrzev-MCLG-XX[00m:[01;34m~[00m$ ^C[?2004l[?2004h[?2004l
+[?2004h]0;knrzev@knrzev-MCLG-XX: ~[01;32mknrzev@knrzev-MCLG-XX[00m:[01;34m~[00m$ [?2004l
+exit
+
+Script done on 2026-05-12 17:50:02+03:00 [COMMAND_EXIT_CODE="130"]

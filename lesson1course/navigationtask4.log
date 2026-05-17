@@ -1,0 +1,25 @@
+Script started on 2026-05-14 11:17:31+03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="80" LINES="24"]
+[?2004h]0;knrzev@knrzev-MCLG-XX: ~/Desktop/coursehomework[01;32mknrzev@knrzev-MCLG-XX[00m:[01;34m~/Desktop/coursehomework[00m$ cd 
+[?2004l[?2004h]0;knrzev@knrzev-MCLG-XX: ~[01;32mknrzev@knrzev-MCLG-XX[00m:[01;34m~[00m$ sleep 300 &
+[?2004l[1] 9148
+[?2004h]0;knrzev@knrzev-MCLG-XX: ~[01;32mknrzev@knrzev-MCLG-XX[00m:[01;34m~[00m$ pgreb[Kps[K sleep
+[?2004l2096
+3988
+6645
+9148
+[?2004h]0;knrzev@knrzev-MCLG-XX: ~[01;32mknrzev@knrzev-MCLG-XX[00m:[01;34m~[00m$ ps aux \[K| grep slepp[K[Kep
+[?2004lroot        2096  0.0  0.0   3220  1876 ?        S    10:56   0:00 [01;31m[Ksleep[m[K 3600
+knrzev      3988  0.0  0.0  16964  2116 pts/0    S    10:57   0:00 [01;31m[Ksleep[m[K infinity
+knrzev      6645  0.0  0.0  16964  2112 pts/0    S+   11:03   0:00 [01;31m[Ksleep[m[K infinity
+knrzev      9148  0.0  0.0  16964  2180 pts/2    S    11:17   0:00 [01;31m[Ksleep[m[K 300
+knrzev      9157  0.0  0.0  17952  2400 pts/2    S+   11:18   0:00 grep --color=auto [01;31m[Ksleep[m[K
+[?2004h]0;knrzev@knrzev-MCLG-XX: ~[01;32mknrzev@knrzev-MCLG-XX[00m:[01;34m~[00m$ kill 9148
+[?2004l[?2004h]0;knrzev@knrzev-MCLG-XX: ~[01;32mknrzev@knrzev-MCLG-XX[00m:[01;34m~[00m$ pgrep sleep
+[?2004l2096
+3988
+6645
+[1]+  Terminated              sleep 300
+[?2004h]0;knrzev@knrzev-MCLG-XX: ~[01;32mknrzev@knrzev-MCLG-XX[00m:[01;34m~[00m$ [?2004l
+exit
+
+Script done on 2026-05-14 11:18:55+03:00 [COMMAND_EXIT_CODE="0"]

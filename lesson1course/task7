@@ -1,0 +1,31 @@
+knrzev@knrzev-MCLG-XX:~/Desktop/coursehomework$ cat numbers.txt; echo; cat sorted.txt; echo; cat  unique.txt
+42
+17
+8
+99
+3
+17
+42
+56
+
+17
+17
+3
+42
+42
+56
+8
+99
+
+17
+3
+42
+56
+8
+99
+
+knrzev@knrzev-MCLG-XX:~/Desktop/coursehomework$ wc -l numbers.txt
+8 numbers.txt
+knrzev@knrzev-MCLG-XX:~/Desktop/coursehomework$ grep 7 numbers.txt
+17
+17

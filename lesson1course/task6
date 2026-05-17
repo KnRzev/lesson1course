@@ -1,0 +1,5 @@
+knrzev@knrzev-MCLG-XX:~$ ls -l secret.key
+-rw-rw-r-- 1 knrzev knrzev 31 мая 14 11:27 secret.key
+knrzev@knrzev-MCLG-XX:~$ chmod 600 secret.key
+knrzev@knrzev-MCLG-XX:~$ ls -l secret.key
+-rw------- 1 knrzev knrzev 31 мая 14 11:27 secret.key

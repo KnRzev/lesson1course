@@ -1,0 +1,12 @@
+knrzev@knrzev-MCLG-XX:~$ apropos free space
+df (1)               - report file system space usage
+knrzev@knrzev-MCLG-XX:~$ man df
+knrzev@knrzev-MCLG-XX:~$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           1,6G  3,3M  1,6G   1% /run
+/dev/nvme0n1p2  937G   24G  866G   3% /
+tmpfs           7,7G  4,0K  7,7G   1% /dev/shm
+tmpfs           5,0M  8,0K  5,0M   1% /run/lock
+efivarfs        268K  213K   51K  81% /sys/firmware/efi/efivars
+/dev/nvme0n1p1  1,1G   18M  1,1G   2% /boot/efi
+tmpfs           1,6G  2,6M  1,6G   1% /run/user/1000

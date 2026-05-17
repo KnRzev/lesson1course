@@ -1,0 +1,226 @@
+Теория
+1. Терминал от shell отличается тем, что терминал - программа, которая позволяет
+вводить в неё команды, а shell доводит информацию для компьютера, чтобы как раз таки в терминале
+были видны ответы. Терминал - где ты работаешь, а shell - почему терминал работает.
+2. Команда pwd показывает путь от "абсолютной директории" (/) до той, в которой ты прямо сейчас 
+находишься.
+3. Абсолютный путь показывает ПОЛНЫЙ путь до папки или файла, а относительный только путь
+ОТНОСИТЕЛЬНО текущей папки. Абсолютный путь + комада "cd" сработает из любой директории
+4. Одна точка после "cd" не делает ничего, так как ссылается на директорию, в которой ты сейчас
+находишься (вроде). Две точки после "cd" переносят тебя в родительскую директорию. В ту 
+директорию, в которой находится твоя нынешняя директория.
+5. rm - удаляет и файлы и папки (можно использовать флаги). rmdir - удаляет только пустые папки.
+6. chmod +x даёт определённому файлу права на исполнение. 
+7. PATH - ("библиотека)" список папок, в которых хранятся команды для использования в терминале.
+8.Обе используются для переноса данных в файл, но по разному.
+">" - нужна чтобы перезаписать информацию в файле.(Прошлые данные стираются).
+">>" - данные записываются в конец файла. (Прошлые данные дополняются).
+9. Позволяет совмещать сразу несколько выполнение команд в одном "запросе".
+10. Скрипт (файл) выполняется именно через bash и не как иначе.
+
+
+Задание 1
+Script started on 2026-05-12 17:47:27+03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="184" LINES="49"]
+[?2004h]0;knrzev@knrzev-MCLG-XX: ~/Desktop/coursehomework[01;32mknrzev@knrzev-MCLG-XX[00m:[01;34m~/Desktop/coursehomework[00m$ cd ..[K[K
+[?2004l[?2004h]0;knrzev@knrzev-MCLG-XX: ~[01;32mknrzev@knrzev-MCLG-XX[00m:[01;34m~[00m$ pwd
+[?2004l/home/knrzev
+[?2004h]0;knrzev@knrzev-MCLG-XX: ~[01;32mknrzev@knrzev-MCLG-XX[00m:[01;34m~[00m$ cd /etc
+[?2004l[?2004h]0;knrzev@knrzev-MCLG-XX: /etc[01;32mknrzev@knrzev-MCLG-XX[00m:[01;34m/etc[00m$ ls
+[?2004ladduser.conf            [0m[01;34mcracklib[0m             environment           hdparm.conf      libaudit.conf   netconfig            profile           services           timezone
+[01;34malsa[0m                    [01;34mcredstore[0m            [01;34menvironment.d[0m         host.conf        [01;34mlibblockdev[0m     [01;34mnetplan[0m              [01;34mprofile.d[0m         [01;34msgml[0m               [01;34mtmpfiles.d[0m
+[01;34malternatives[0m            [01;34mcredstore.encrypted[0m  ethertypes            hostname         [01;34mlibibverbs.d[0m    [01;34mnetwork[0m              protocols         shadow             [01;34mubuntu-advantage[0m
+anacrontab              [01;34mcron.d[0m               [01;34mfonts[0m                 hosts            [01;34mlibnl-3[0m         [01;34mnetworkd-dispatcher[0m  [01;34mpulse[0m             shadow-            ucf.conf
+apg.conf                [01;34mcron.daily[0m           fprintd.conf          hosts.allow      [01;34mlibpaper.d[0m      [01;34mNetworkManager[0m       [01;34mpython3[0m           shells             [01;34mudev[0m
+[01;34mapm[0m                     [01;34mcron.hourly[0m          fstab                 hosts.deny       locale.alias    networks             [01;34mpython3.12[0m        [01;34mskel[0m               [01;34mudisks2[0m
+[01;34mapparmor[0m                [01;34mcron.monthly[0m         fuse.conf             [01;34mhp[0m               locale.conf     [01;34mnewt[0m                 [01;34mrc0.d[0m             [01;34msnmp[0m               [01;34mufw[0m
+[01;34mapparmor.d[0m              crontab              [01;34mfwupd[0m                 [01;34mifplugd[0m          locale.gen      [01;32mnftables.conf[0m        [01;34mrc1.d[0m             [01;34mspeech-dispatcher[0m  [01;34mupdate-manager[0m
+[01;34mapport[0m                  [01;34mcron.weekly[0m          gai.conf              [01;34minit[0m             [01;36mlocaltime[0m       nsswitch.conf        [01;34mrc2.d[0m             [01;34mssh[0m                [01;34mupdate-motd.d[0m
+[01;34mapt[0m                     [01;34mcron.yearly[0m          [01;34mgdb[0m                   [01;34minit.d[0m           [01;34mlogcheck[0m        [01;34mopenvpn[0m              [01;34mrc3.d[0m             [01;34mssl[0m                [01;34mupdate-notifier[0m
+[01;34mavahi[0m                   [01;34mcups[0m                 [01;34mgdm3[0m                  [01;34minitramfs-tools[0m  login.defs      [01;34mopt[0m                  [01;34mrc4.d[0m             [01;34msssd[0m               [01;34mUPower[0m
+bash.bashrc             [01;34mcupshelpers[0m          [01;34mgeoclue[0m               inputrc          logrotate.conf  [01;36mos-release[0m           [01;34mrc5.d[0m             subgid             usb_modeswitch.conf
+bash_completion         [01;34mdbus-1[0m               [01;34mghostscript[0m           [01;34minsserv.conf.d[0m   [01;34mlogrotate.d[0m     [01;34mPackageKit[0m           [01;34mrc6.d[0m             subgid-            [01;34musb_modeswitch.d[0m
+[01;34mbash_completion.d[0m       [01;34mdconf[0m                [01;34mglvnd[0m                 [01;34mipp-usb[0m          lsb-release     pam.conf             [01;34mrcS.d[0m             subuid             [01;36mvconsole.conf[0m
+bindresvport.blacklist  debconf.conf         [01;34mgnome[0m                 [01;34miproute2[0m         machine-id      [01;34mpam.d[0m                [01;36mresolv.conf[0m       subuid-            [01;34mvim[0m
+[01;34mbinfmt.d[0m                debian_version       [01;34mgnome-remote-desktop[0m  issue            magic           papersize            resolv.conf.head  sudo.conf          [01;36mvtrgb[0m
+[01;34mbluetooth[0m               [01;34mdebuginfod[0m           [01;34mgnutls[0m                issue.net        magic.mime      passwd               [01;36mrmt[0m               sudoers            [01;34mvulkan[0m
+brlapi.key              [01;34mdefault[0m              [01;34mgroff[0m                 [01;34mkernel[0m           manpath.config  passwd-              rpc               [01;34msudoers.d[0m          wgetrc
+[01;34mbrltty[0m                  deluser.conf         group                 kerneloops.conf  mime.types      [01;34mpcmcia[0m               rsyslog.conf      sudo_logsrvd.conf  [01;34mwpa_supplicant[0m
+brltty.conf             [01;34mdepmod.d[0m             group-                [01;34mkrb5.conf.d[0m      mke2fs.conf     [01;34mperl[0m                 [01;34mrsyslog.d[0m         [01;34msupercat[0m           [01;34mX11[0m
+[01;34mca-certificates[0m         [01;34mdhcp[0m                 [01;34mgrub.d[0m                [01;34mldap[0m             [01;34mModemManager[0m    [01;34mpki[0m                  rygel.conf        sysctl.conf        xattr.conf
+ca-certificates.conf    dhcpcd.conf          gshadow               ld.so.cache      [01;34mmodprobe.d[0m      [01;34mplymouth[0m             [01;34msane.d[0m            [01;34msysctl.d[0m           [01;34mxdg[0m
+[01;34mchatscripts[0m             [01;34mdictionaries-common[0m  gshadow-              ld.so.conf       modules         [01;34mpm[0m                   [01;34msecurity[0m          [01;34msysstat[0m            [01;34mxml[0m
+[01;34mcloud[0m                   [01;34mdpkg[0m                 [01;34mgss[0m                   [01;34mld.so.conf.d[0m     [01;34mmodules-load.d[0m  pnm2ppa.conf         [01;34mselinux[0m           [01;34msystemd[0m            zsh_command_not_found
+[01;34mcolord[0m                  e2scrub.conf         [01;34mgtk-2.0[0m               legal            [01;36mmtab[0m            [01;34mpolkit-1[0m             sensors3.conf     [01;34mterminfo[0m
+[01;34mconsole-setup[0m           [01;34memacs[0m                [01;34mgtk-3.0[0m               libao.conf       nanorc          [01;34mppp[0m                  [01;34msensors.d[0m         [01;34mthermald[0m
+[?2004h]0;knrzev@knrzev-MCLG-XX: /etc[01;32mknrzev@knrzev-MCLG-XX[00m:[01;34m/etc[00m$ cd /var/log
+[?2004l[?2004h]0;knrzev@knrzev-MCLG-XX: /var/log[01;32mknrzev@knrzev-MCLG-XX[00m:[01;34m/var/log[00m$ ls /usr/bin | wc
+[?2004l   1354    1354   13414
+[?2004h]0;knrzev@knrzev-MCLG-XX: /var/log[01;32mknrzev@knrzev-MCLG-XX[00m:[01;34m/var/log[00m$ ls /usr/bin | wc -;[Kl
+[?2004l1354
+[?2004h]0;knrzev@knrzev-MCLG-XX: /var/log[01;32mknrzev@knrzev-MCLG-XX[00m:[01;34m/var/log[00m$ cd ..[K[K/knrzev
+[?2004lbash: cd: /knrzev: No such file or directory
+[?2004h]0;knrzev@knrzev-MCLG-XX: /var/log[01;32mknrzev@knrzev-MCLG-XX[00m:[01;34m/var/log[00m$ cd/home
+[?2004lbash: cd/home: No such file or directory
+[?2004h]0;knrzev@knrzev-MCLG-XX: /var/log[01;32mknrzev@knrzev-MCLG-XX[00m:[01;34m/var/log[00m$ cd /home
+[?2004l[?2004h]0;knrzev@knrzev-MCLG-XX: /home[01;32mknrzev@knrzev-MCLG-XX[00m:[01;34m/home[00m$ cd /[Kknrzev
+[?2004l[?2004h]0;knrzev@knrzev-MCLG-XX: ~[01;32mknrzev@knrzev-MCLG-XX[00m:[01;34m~[00m$ cd Desk[K[K[K[K[K[K[Kls
+[?2004l[0m[01;34mDesktop[0m  [01;34mDocuments[0m  [01;34mDownloads[0m  [01;34mMusic[0m  [01;34mPictures[0m  [01;34mPublic[0m  [01;34mPyCharmMiscProject[0m  [01;34msnap[0m  [01;34mTemplates[0m  [01;34mVideos[0m
+[?2004h]0;knrzev@knrzev-MCLG-XX: ~[01;32mknrzev@knrzev-MCLG-XX[00m:[01;34m~[00m$ ^C[?2004l[?2004h[?2004l
+[?2004h]0;knrzev@knrzev-MCLG-XX: ~[01;32mknrzev@knrzev-MCLG-XX[00m:[01;34m~[00m$ [?2004l
+exit
+
+Script done on 2026-05-12 17:50:02+03:00 [COMMAND_EXIT_CODE="130"]
+
+
+Задание 2
+:~/montanium-cli/montanium/notes/day1$ ls -la
+total 12
+drwxrwxr-x 2 knrzev knrzev 4096 мая 12 17:57 .
+drwxrwxr-x 3 knrzev knrzev 4096 мая 12 17:54 ..
+-rw-rw-r-- 1 knrzev knrzev  174 мая 12 17:56 README
+
+
+Задание 3
+knrzev@knrzev-MCLG-XX:~$ apropos free space
+df (1)               - report file system space usage
+knrzev@knrzev-MCLG-XX:~$ man df
+knrzev@knrzev-MCLG-XX:~$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           1,6G  3,3M  1,6G   1% /run
+/dev/nvme0n1p2  937G   24G  866G   3% /
+tmpfs           7,7G  4,0K  7,7G   1% /dev/shm
+tmpfs           5,0M  8,0K  5,0M   1% /run/lock
+efivarfs        268K  213K   51K  81% /sys/firmware/efi/efivars
+/dev/nvme0n1p1  1,1G   18M  1,1G   2% /boot/efi
+tmpfs           1,6G  2,6M  1,6G   1% /run/user/1000
+
+
+Задание 4
+Script started on 2026-05-14 11:17:31+03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="80" LINES="24"]
+[?2004h]0;knrzev@knrzev-MCLG-XX: ~/Desktop/coursehomework[01;32mknrzev@knrzev-MCLG-XX[00m:[01;34m~/Desktop/coursehomework[00m$ cd 
+[?2004l[?2004h]0;knrzev@knrzev-MCLG-XX: ~[01;32mknrzev@knrzev-MCLG-XX[00m:[01;34m~[00m$ sleep 300 &
+[?2004l[1] 9148
+[?2004h]0;knrzev@knrzev-MCLG-XX: ~[01;32mknrzev@knrzev-MCLG-XX[00m:[01;34m~[00m$ pgreb[Kps[K sleep
+[?2004l2096
+3988
+6645
+9148
+[?2004h]0;knrzev@knrzev-MCLG-XX: ~[01;32mknrzev@knrzev-MCLG-XX[00m:[01;34m~[00m$ ps aux \[K| grep slepp[K[Kep
+[?2004lroot        2096  0.0  0.0   3220  1876 ?        S    10:56   0:00 [01;31m[Ksleep[m[K 3600
+knrzev      3988  0.0  0.0  16964  2116 pts/0    S    10:57   0:00 [01;31m[Ksleep[m[K infinity
+knrzev      6645  0.0  0.0  16964  2112 pts/0    S+   11:03   0:00 [01;31m[Ksleep[m[K infinity
+knrzev      9148  0.0  0.0  16964  2180 pts/2    S    11:17   0:00 [01;31m[Ksleep[m[K 300
+knrzev      9157  0.0  0.0  17952  2400 pts/2    S+   11:18   0:00 grep --color=auto [01;31m[Ksleep[m[K
+[?2004h]0;knrzev@knrzev-MCLG-XX: ~[01;32mknrzev@knrzev-MCLG-XX[00m:[01;34m~[00m$ kill 9148
+[?2004l[?2004h]0;knrzev@knrzev-MCLG-XX: ~[01;32mknrzev@knrzev-MCLG-XX[00m:[01;34m~[00m$ pgrep sleep
+[?2004l2096
+3988
+6645
+[1]+  Terminated              sleep 300
+[?2004h]0;knrzev@knrzev-MCLG-XX: ~[01;32mknrzev@knrzev-MCLG-XX[00m:[01;34m~[00m$ [?2004l
+exit
+
+Script done on 2026-05-14 11:18:55+03:00 [COMMAND_EXIT_CODE="0"]
+
+
+Задание 5
+#!/bin/bash
+echo " Пользователь: $USER "
+echo "Директория: $(pwd)"
+echo "Дата: $(date)"
+echo "Кол-во файлов в дом директории: $(find ~ -maxdepth 1 -type f | wc -l)"
+
+ Пользователь: knrzev 
+Директория: /home/knrzev
+Дата: Чт 14 мая 2026 11:24:10 MSK
+Кол-во файлов в дом директории: 9
+
+
+Задание 6
+knrzev@knrzev-MCLG-XX:~$ ls -l secret.key
+-rw-rw-r-- 1 knrzev knrzev 31 мая 14 11:27 secret.key
+knrzev@knrzev-MCLG-XX:~$ chmod 600 secret.key
+knrzev@knrzev-MCLG-XX:~$ ls -l secret.key
+-rw------- 1 knrzev knrzev 31 мая 14 11:27 secret.key
+
+
+Задание 7
+knrzev@knrzev-MCLG-XX:~/Desktop/coursehomework$ cat numbers.txt; echo; cat sorted.txt; echo; cat  unique.txt
+numbers.txt
+42
+17
+8
+99
+3
+17
+42
+56
+sorted.txt
+17
+17
+3
+42
+42
+56
+8
+99
+unique.txt
+17
+3
+42
+56
+8
+99
+
+knrzev@knrzev-MCLG-XX:~/Desktop/coursehomework$ wc -l numbers.txt
+8 numbers.txt
+knrzev@knrzev-MCLG-XX:~/Desktop/coursehomework$ grep 7 numbers.txt
+17
+17
+
+
+Задание 8
+ls: cannot access '=': No such file or directory
+ls: cannot access 'ls -la.': No such file or directory date+%A: command not found
+Welcome back, knrzev! Today is .
+knrzev@knrzev-MCLG-XX:~$ 
+
+
+Задание 10 
+OC: Ubuntu 24.04 LTS
+Пакетный менеджер: apt
+Команда установки:
+sudo apt install neofetch
+Команда запуска:
+neofetch
+Команда сохранение лога:
+neofetch | tee neofetch.log
+
+Сам log:
+
+            .-/+oossssoo+/-.               knrzev@knrzev-MCLG-XX 
+        `:+ssssssssssssssssss+:`           --------------------- 
+      -+ssssssssssssssssssyyssss+-         OS: Ubuntu 24.04.4 LTS x86_64 
+    .ossssssssssssssssssdMMMNysssso.       Host: MCLG-XX M1010 
+   /ssssssssssshdmmNNmmyNMMMMhssssss/      Kernel: 6.17.0-23-generic 
+  +ssssssssshmydMMMMMMMNddddyssssssss+     Uptime: 1 hour, 17 mins 
+ /sssssssshNMMMyhhyyyyhmNMMMNhssssssss/    Packages: 1558 (dpkg), 21 (snap) 
+.ssssssssdMMMNhsssssssssshNMMMdssssssss.   Shell: bash 5.2.21 
++sssshhhyNMMNyssssssssssssyNMMMysssssss+   Resolution: 1920x1200 
+ossyNMMMNyMMhsssssssssssssshmmmhssssssso   DE: GNOME 46.0 
+ossyNMMMNyMMhsssssssssssssshmmmhssssssso   WM: Mutter 
++sssshhhyNMMNyssssssssssssyNMMMysssssss+   WM Theme: Adwaita 
+.ssssssssdMMMNhsssssssssshNMMMdssssssss.   Theme: Yaru-dark [GTK2/3] 
+ /sssssssshNMMMyhhyyyyhdNMMMNhssssssss/    Icons: Yaru-dark [GTK2/3] 
+  +sssssssssdmydMMMMMMMMddddyssssssss+     Terminal: gnome-terminal 
+   /ssssssssssshdmNNNNmyNMMMMhssssss/      CPU: 13th Gen Intel i5-13420H (12) @ 4.600GHz 
+    .ossssssssssssssssssdMMMNysssso.       GPU: Intel Raptor Lake-P [UHD Graphics] 
+      -+sssssssssssssssssyyyssss+-         Memory: 1737MiB / 15713MiB 
+        `:+ssssssssssssssssss+:`
+            .-/+oossssoo+/-.                                       
+                                                                   
+
+
+
+P.S Загрузка "логов" плохо работает, поэтому решил всё отправить единным файлом, но логи (как я
+заметил) полетели.
